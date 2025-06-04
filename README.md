@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="./public/GraphiteTrust_Logo.png" alt="GraphiteTrust Logo" width="160" />
-  <h2>Decentralized Reputation & Compliance Dashboard for Web3</h2>
+  <h2>Decentralized Reputation & Compliance Dashboard for Graphite Network</h2>
   <p>Visualize trust, compliance, and activity for wallets, DAOs, and DeFi projects—powered by the Graphite Network.</p>
 
   <a href="https://opensource.org/licenses/MIT">
