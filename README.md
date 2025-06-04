@@ -41,7 +41,6 @@ In the fast-moving world of Web3, trust and compliance are everything. GraphiteT
 - 📈 **Balance & Mining History**: Visualize balance changes and mined blocks for any address.
 - 📱 **Mobile-Ready**: Fully responsive—use it on any device, anywhere.
 
-
 ---
 
 ## 🏗️ App Architecture
@@ -53,31 +52,23 @@ In the fast-moving world of Web3, trust and compliance are everything. GraphiteT
 ## 🛠️ Quick Start: Setup & Installation
 
 1. **Clone the repository:**
-
    ```bash
    git clone https://github.com/yourusername/graphite-trust.git
    cd graphite-trust
    ```
-
 2. **Install dependencies:**
-
    ```bash
    npm install
    ```
-
 3. **Configure your environment:**
-
-   - Copy `.env.` and add your Graphite API key:
+   - Copy `.env` and add your Graphite API key:
      ```env
      VITE_GRAPHITE_API_KEY=your_api_key_here
      ```
-
 4. **Start the development server:**
-
    ```bash
    npm run dev
    ```
-
 5. **Open the app:**
    - Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
@@ -116,6 +107,56 @@ GraphiteTrust seamlessly integrates with the [Graphite API](https://docs.main.at
 
 ---
 
+# 🧱 Future Expansion: On-Chain Reputation Registry
+
+## What is it?
+
+A Solidity smart contract that stores and updates wallet/DAO reputation scores, compliance status, and KYC levels directly on-chain.
+
+## Why does it matter?
+
+- **Verifiable & Tamper-Proof:** Trust scores are stored on-chain, making them transparent and immutable.
+- **Composable:** Other dApps, DAOs, and DeFi protocols can query and use these scores directly on-chain for access control, whitelisting, or risk management.
+- **Compliance & Risk:** Enables compliance checks and risk management for on-chain applications.
+
+## How does it work?
+
+- **Score Updates:**
+  - Only an authorized oracle or admin can update reputation, compliance, and KYC scores for any address.
+  - All updates are recorded on-chain and can be audited.
+- **Attestations:**
+  - DAOs or authorized accounts can "attest" or vouch for other addresses, building a web of trust.
+  - Attestations are stored and can be queried for transparency.
+- **Read Access:**
+  - Anyone can read the scores, compliance status, and KYC level for any address.
+- **Integration:**
+  - Other contracts can call the registry to check scores for access control, whitelisting, or risk management.
+
+## Example Use Cases
+
+- **DeFi Protocols:** Restrict access to users with high trust/compliance scores.
+- **DAOs:** Use reputation scores for voting power or membership.
+- **KYC/AML:** Enforce compliance requirements for on-chain actions.
+
+## Contract API Overview
+
+- `updateReputation(address, kycLevel, complianceScore, trustScore, reason)` — Update scores (oracle/admin only)
+- `addAttestation(address subject, uint256 score, string reason)` — Add a vouch/attestation (attester only)
+- `getReputation(address)` — Read scores for any address
+- `getAttestationHistory(address)` — Read attestations for any address
+
+## Security & Governance
+
+- Role-based access control for sensitive functions
+- All updates and attestations are logged via events
+- Emergency pause and admin controls
+
+📂 For full contract details, see `Contract/contracts/ReputationRegistry.sol`.
+
+_This registry is designed to be a foundational building block for decentralized trust and compliance in the Graphite Network and beyond._
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! To get started:
@@ -126,7 +167,7 @@ We welcome contributions! To get started:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
----
+## _Have ideas for new features or want to contribute? Open an issue or pull request!_
 
 ## 📄 License
 
@@ -137,6 +178,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🌐 Learn More
 
 - [Graphite API Documentation](https://docs.main.atgraphite.com/)
-- [Project Demo & Screenshots](#) 
+- [Project Demo & Screenshots](#)
 
 > **GraphiteTrust** — Bringing trust, transparency, and compliance to Web3. Try it now and make smarter decisions in the decentralized world!
+
+---
