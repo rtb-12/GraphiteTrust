@@ -2,42 +2,25 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 animated-bg">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 animate-gradient" />
-        <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-              <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl animate-fade-in">
-                  <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-500">
-                    Decentralized Trust
-                  </span>
-                  <span className="block text-blue-600 dark:text-blue-400 mt-2">
-                    For Web3
-                  </span>
-                </h1>
-                <p className="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 animate-fade-in-delay">
-                  GraphiteTrust provides real-time trust scores and compliance
-                  metrics for wallets, DAOs, and DeFi projects. Make informed
-                  decisions in the Web3 ecosystem.
-                </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow">
-                    <Link
-                      to="/dashboard"
-                      className="group relative w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 dark:from-blue-500 dark:to-blue-600 dark:hover:from-blue-400 dark:hover:to-blue-500 md:py-4 md:text-lg md:px-10 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-                    >
-                      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md" />
-                      Get Started
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
+      <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800">
+        <h1 className="text-5xl sm:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-500 text-center">
+          Decentralized Trust
+          <br />
+          For Web3
+        </h1>
+        <p className="mt-6 text-lg text-gray-700 dark:text-gray-300 max-w-xl text-center">
+          GraphiteTrust provides real-time trust scores and compliance metrics
+          for wallets, DAOs, and DeFi projects. Make informed decisions in the
+          Web3 ecosystem.
+        </p>
+        <Link
+          to="/dashboard"
+          className="mt-8 px-8 py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg transition"
+        >
+          Get Started
+        </Link>
       </div>
 
       {/* Features Section */}
@@ -232,119 +215,56 @@ export function Home() {
         </div>
       </div>
 
-      {/* Pricing Section */}
-      <div className="py-16 bg-gray-50 dark:bg-gray-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* About Section */}
+      <div className="py-16 bg-white dark:bg-gray-900/60">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase animate-fade-in">
-              Pricing
+              About GraphiteTrust
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl animate-fade-in-delay">
-              Choose Your Plan
+              Building Trust for the Decentralized Future
+            </p>
+            <p className="mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 mx-auto">
+              GraphiteTrust is a decentralized reputation dashboard designed to
+              bring transparency, accountability, and real-time trust metrics to
+              the Web3 ecosystem. Our mission is to empower users, DAOs, and
+              DeFi projects with actionable insights and compliance data, making
+              Web3 safer and more reliable for everyone.
             </p>
           </div>
-          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {[
-              {
-                name: "Basic",
-                price: "Free",
-                features: [
-                  "Basic trust score lookup",
-                  "Limited API calls",
-                  "Basic compliance checks",
-                  "Community support",
-                ],
-              },
-              {
-                name: "Pro",
-                price: "$99",
-                period: "/month",
-                features: [
-                  "Advanced trust analytics",
-                  "Unlimited API calls",
-                  "Real-time notifications",
-                  "Priority support",
-                  "Custom reports",
-                ],
-                highlighted: true,
-              },
-              {
-                name: "Enterprise",
-                price: "Custom",
-                features: [
-                  "Custom integration",
-                  "Dedicated support",
-                  "Advanced analytics",
-                  "SLA guarantee",
-                  "Custom features",
-                ],
-              },
-            ].map((plan, index) => (
-              <div
-                key={index}
-                className={`relative p-8 rounded-lg backdrop-blur-sm border ${
-                  plan.highlighted
-                    ? "bg-blue-50/50 dark:bg-blue-600/20 border-blue-200 dark:border-blue-500/50"
-                    : "bg-white/80 dark:bg-gray-800/40 border-gray-200 dark:border-gray-700/50"
-                } hover:border-blue-500/50 transition-all duration-300`}
-              >
-                {plan.highlighted && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-semibold bg-blue-500 text-white">
-                      Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {plan.name}
-                </h3>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-4xl font-extrabold text-gray-900 dark:text-white">
-                    {plan.price}
-                  </span>
-                  {plan.period && (
-                    <span className="ml-1 text-xl text-gray-500 dark:text-gray-400">
-                      {plan.period}
-                    </span>
-                  )}
-                </div>
-                <ul className="mt-6 space-y-4">
-                  {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start">
-                      <svg
-                        className="h-6 w-6 text-blue-500 dark:text-blue-400 flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span className="ml-3 text-gray-600 dark:text-gray-300">
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-8">
-                  <Link
-                    to="/dashboard"
-                    className={`block w-full px-4 py-2 text-center rounded-md text-white font-medium ${
-                      plan.highlighted
-                        ? "bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
-                        : "bg-gray-700 hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-500"
-                    } transition-colors duration-300`}
-                  >
-                    Get Started
-                  </Link>
-                </div>
-              </div>
-            ))}
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 dark:bg-gray-800/40 rounded-lg p-6 shadow">
+              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                Transparent
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                All trust scores and compliance metrics are sourced from
+                on-chain data and the Graphite API, ensuring full transparency
+                and verifiability.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 rounded-lg p-6 shadow">
+              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                Real-Time
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Our dashboard updates in real-time, providing the latest
+                information on wallet reputation, compliance, and activity.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 rounded-lg p-6 shadow">
+              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2">
+                User-Centric
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Designed for both individuals and organizations, GraphiteTrust
+                offers intuitive visualizations and actionable insights for all
+                users.
+              </p>
+            </div>
           </div>
+          
         </div>
       </div>
 
@@ -387,14 +307,6 @@ export function Home() {
                     className="text-base text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                   >
                     Features
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-base text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                  >
-                    Pricing
                   </a>
                 </li>
                 <li>

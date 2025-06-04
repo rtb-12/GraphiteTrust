@@ -1,21 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
+import type { TrustScore } from "../services/api";
+import { getTrustScore } from "../services/api";
 
-interface TrustScore {
-  score: number;
-  description: string;
-}
-
-export function useTrustScore(query: string) {
+export function useTrustScore(address: string) {
   return useQuery<TrustScore>({
-    queryKey: ["trustScore", query],
-    queryFn: async () => {
-      // TODO: Implement actual API call
-      return {
-        score: 85,
-        description:
-          "High trust score based on transaction history and compliance",
-      };
-    },
-    enabled: !!query,
+    queryKey: ["trustScore", address],
+    queryFn: () => getTrustScore(address),
+    enabled: !!address && address.length === 42 && address.startsWith("0x"),
   });
 }

@@ -59,26 +59,7 @@ export function Navbar() {
             >
               Dashboard
             </Link>
-            <Link
-              to="/pricing"
-              className={`text-sm font-medium transition-colors ${
-                isActive("/pricing")
-                  ? "text-blue-500"
-                  : "text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-              }`}
-            >
-              Pricing
-            </Link>
-            <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors ${
-                isActive("/about")
-                  ? "text-blue-500"
-                  : "text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-              }`}
-            >
-              About
-            </Link>
+            
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -208,17 +189,6 @@ export function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Dashboard
-            </Link>
-            <Link
-              to="/pricing"
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                isActive("/pricing")
-                  ? "text-blue-500 bg-blue-50 dark:bg-blue-900/20"
-                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Pricing
             </Link>
             <Link
               to="/about"
