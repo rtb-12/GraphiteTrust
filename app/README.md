@@ -1,69 +1,125 @@
-# GraphiteTrust
+# 🚀 GraphiteTrust: The Web3 Reputation & Compliance Dashboard
 
-A decentralized reputation dashboard for the Graphite Network that provides users with a transparent, real-time interface to assess trust scores and compliance metrics of wallets, DAOs, and DeFi projects.
+<div align="center">
+  <img src="../public/GraphiteTrust_Logo.png" alt="GraphiteTrust Logo" width="160" />
+  <h2>Decentralized Reputation & Compliance Dashboard for Web3</h2>
+  <p>Visualize trust, compliance, and activity for wallets, DAOs, and DeFi projects—powered by the Graphite Network.</p>
 
-## Features
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
+  </a>
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white" alt="Built with React" />
+  </a>
+  <a href="https://docs.main.atgraphite.com/">
+    <img src="https://img.shields.io/badge/API-Graphite-6C47FF" alt="Graphite API" />
+  </a>
+</div>
 
-- 🔍 Search functionality for wallets, DAOs, and projects
-- 📊 Real-time trust score visualization
-- 📈 Compliance metrics tracking
-- 🔔 Recent activity monitoring
-- 🎨 Modern glassmorphic UI design
+**GraphiteTrust** is your all-in-one, real-time dashboard for visualizing trust, compliance, and reputation across wallets, DAOs, and DeFi projects on the Graphite Network. Empower your Web3 journey with actionable insights, transparent metrics, and a beautiful, modern interface.
 
-## Tech Stack
+---
 
-- React + TypeScript
-- Vite
-- Tailwind CSS
-- Chakra UI
-- React Query
-- Axios
+## 🌟 Why GraphiteTrust?
 
-## Getting Started
+In the fast-moving world of Web3, trust and compliance are everything. GraphiteTrust gives you the power to:
 
-1. Clone the repository:
+- **Instantly assess the trustworthiness** of any wallet, DAO, or project.
+- **Monitor compliance and KYC status** in real time—no more guesswork.
+- **Spot suspicious activity** before it becomes a problem.
+- **Make informed decisions** with confidence, whether you're a user, DAO, DeFi protocol, or auditor.
 
-```bash
-git clone https://github.com/yourusername/graphite-trust.git
-cd graphite-trust
-```
+---
 
-2. Install dependencies:
+## ✨ Key Features
 
-```bash
-npm install
-```
+- 🔍 **Lightning-Fast Search**: Instantly look up wallets, DAOs, or projects and get a full trust & compliance profile.
+- 📊 **Real-Time Trust Score Visualization**: See at a glance how reputable an address is, with beautiful, interactive charts.
+- 🛡️ **Compliance & KYC Tracking**: Track KYC levels, regulatory status, and compliance history for any entity.
+- 🔔 **Live Activity Feed**: Monitor recent transactions and changes in trust/compliance status as they happen.
+- 🏆 **Top Wallet Holders**: Discover the most influential and trusted accounts in the ecosystem.
+- 📈 **Balance & Mining History**: Visualize balance changes and mined blocks for any address.
+- 🎨 **Modern Glassmorphic UI**: Enjoy a stunning, responsive interface with smooth animations and dark mode support.
+- 📱 **Mobile-Ready**: Fully responsive—use it on any device, anywhere.
+- 🧩 **Easy Integration**: Built with React, TypeScript, and Tailwind CSS for easy customization and extension.
 
-3. Start the development server:
+---
 
-```bash
-npm run dev
-```
+## 🏗️ App Architecture
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+![App Architecture](/public/GraphiteTrust_Dark.png)
 
-## Project Structure
+---
+
+## 🛠️ Quick Start: Setup & Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/graphite-trust.git
+   cd graphite-trust
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure your environment:**
+
+   - Copy `.env.example` to `.env.local` (if provided) and add your Graphite API key:
+     ```env
+     VITE_GRAPHITE_API_KEY=your_api_key_here
+     ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app:**
+   - Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🗂️ Project Structure
 
 ```
 src/
-  ├── components/     # React components
-  ├── hooks/         # Custom React hooks
-  ├── services/      # API services
-  ├── types/         # TypeScript type definitions
-  ├── App.tsx        # Main application component
-  └── main.tsx       # Application entry point
+  ├── components/     # Reusable React components
+  ├── hooks/          # Custom React hooks (data fetching, etc.)
+  ├── services/       # API service functions
+  ├── types/          # TypeScript type definitions
+  ├── App.tsx         # Main application component
+  └── main.tsx        # Application entry point
 ```
 
-## API Integration
+---
 
-The application integrates with the Graphite API to fetch:
+## 🔌 API Integration
 
-- Trust scores
-- Compliance metrics
-- Recent activity
-- Search results
+GraphiteTrust seamlessly integrates with the [Graphite API](https://docs.main.atgraphite.com/) to fetch:
 
-## Contributing
+- Trust scores & reputation
+- Compliance & KYC metrics
+- Recent activity & transaction history
+- Top wallet holders & mining stats
+
+---
+
+## 💡 Use Cases
+
+- **DAOs & DeFi Projects:** Vet new members, partners, or counterparties with confidence.
+- **Auditors & Analysts:** Monitor compliance and risk across the ecosystem.
+- **Everyday Users:** Check the trustworthiness of any wallet before transacting.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! To get started:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -71,6 +127,17 @@ The application integrates with the Graphite API to fetch:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌐 Learn More
+
+- [Graphite API Documentation](https://docs.main.atgraphite.com/)
+- [Project Demo & Screenshots](#) _(add your demo link!)_
+
+> **GraphiteTrust** — Bringing trust, transparency, and compliance to Web3. Try it now and make smarter decisions in the decentralized world!
