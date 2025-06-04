@@ -1,0 +1,92 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Coverage directory
+coverage/
+coverage.json
+
+# Gas reporter files
+gas-report.txt
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build files
+dist/
+build/
+out/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Solidity files
+*.sol.js
+*.sol.js.map
+
+# Hardhat config files
+hardhat.config.js
+hardhat.config.ts
+
+# Test files
+test/
+coverage/
+
+# Deployment files
+deployments/
+deploy/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Local Hardhat network
+hardhat-node/
+
+# OpenZeppelin
+.openzeppelin/
+
+# Slither
+slither.db.json
+
+# Mythril
+mythril.json
+
+# Truffle
+.truffle/
+
+# Ganache
+ganache-db/
+
+# Foundry
+cache/
+out/
+broadcast/
+
+# Misc
+.DS_Store
+Thumbs.db
