@@ -1,5 +1,21 @@
 # 🚀 GraphiteTrust: The Web3 Reputation & Compliance Dashboard
 
+<div align="center">
+  <img src="./public/GraphiteTrust_Logo.png" alt="GraphiteTrust Logo" width="160" />
+  <h2>Decentralized Reputation & Compliance Dashboard for Web3</h2>
+  <p>Visualize trust, compliance, and activity for wallets, DAOs, and DeFi projects—powered by the Graphite Network.</p>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
+  </a>
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white" alt="Built with React" />
+  </a>
+  <a href="https://docs.main.atgraphite.com/">
+    <img src="https://img.shields.io/badge/API-Graphite-6C47FF" alt="Graphite API" />
+  </a>
+</div>
+
 **GraphiteTrust** is your all-in-one, real-time dashboard for visualizing trust, compliance, and reputation across wallets, DAOs, and DeFi projects on the Graphite Network. Empower your Web3 journey with actionable insights, transparent metrics, and a beautiful, modern interface.
 
 ---
@@ -25,28 +41,39 @@ In the fast-moving world of Web3, trust and compliance are everything. GraphiteT
 - 📈 **Balance & Mining History**: Visualize balance changes and mined blocks for any address.
 - 📱 **Mobile-Ready**: Fully responsive—use it on any device, anywhere.
 
+
+---
+
+## 🏗️ App Architecture
+
+![App Architecture](./public/GraphiteTrust_Dark.png)
+
 ---
 
 ## 🛠️ Quick Start: Setup & Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/yourusername/graphite-trust.git
    cd graphite-trust
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Configure your environment:**
-   - Create `.env` and add your Graphite API key:
-     ```
+
+   - Copy `.env.` and add your Graphite API key:
+     ```env
      VITE_GRAPHITE_API_KEY=your_api_key_here
      ```
 
 4. **Start the development server:**
+
    ```bash
    npm run dev
    ```
@@ -60,12 +87,12 @@ In the fast-moving world of Web3, trust and compliance are everything. GraphiteT
 
 ```
 src/
-  ├── components/    
-  ├── hooks/          
-  ├── services/       
-  ├── types/          
-  ├── App.tsx         
-  └── main.tsx        
+  ├── components/     # Reusable React components
+  ├── hooks/          # Custom React hooks (data fetching, etc.)
+  ├── services/       # API service functions
+  ├── types/          # TypeScript type definitions
+  ├── App.tsx         # Main application component
+  └── main.tsx        # Application entry point
 ```
 
 ---
@@ -73,6 +100,7 @@ src/
 ## 🔌 API Integration
 
 GraphiteTrust seamlessly integrates with the [Graphite API](https://docs.main.atgraphite.com/) to fetch:
+
 - Trust scores & reputation
 - Compliance & KYC metrics
 - Recent activity & transaction history
@@ -91,6 +119,7 @@ GraphiteTrust seamlessly integrates with the [Graphite API](https://docs.main.at
 ## 🤝 Contributing
 
 We welcome contributions! To get started:
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
@@ -106,9 +135,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 🌐 Learn More
+
 - [Graphite API Documentation](https://docs.main.atgraphite.com/)
-- [Project Demo & Screenshots](#) *(add your demo link!)*
+- [Project Demo & Screenshots](#) 
 
 > **GraphiteTrust** — Bringing trust, transparency, and compliance to Web3. Try it now and make smarter decisions in the decentralized world!
-
-
